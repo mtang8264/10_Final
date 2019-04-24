@@ -35,6 +35,7 @@ public class SceneManager : MonoBehaviour
     void Update()
     {
         Type();
+        ChoiceSelection();
         WriteChoices();
 
         if (Input.GetKeyDown(KeyCode.Return))
@@ -97,5 +98,28 @@ public class SceneManager : MonoBehaviour
             temp += story.currentChoices[i].text + "</color>" + '\n';
         }
         choices.text = temp;
+    }
+
+    void ChoiceSelection()
+    {
+        if(story.currentChoices.Count == 0)
+        {
+            choiceSelector = 0;
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            choiceSelector++;
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            choiceSelector--;
+
+        if(choiceSelector < 0)
+        {
+            choiceSelector = story.currentChoices.Count - 1;
+        }
+        if(choiceSelector >= story.currentChoices.Count)
+        {
+            choiceSelector = 0;
+        }
     }
 }
