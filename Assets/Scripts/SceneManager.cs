@@ -87,6 +87,17 @@ public class SceneManager : MonoBehaviour
                 done = false;
             }
         }
+        else 
+        {
+            story.ChooseChoiceIndex(choiceSelector);
+            if (story.canContinue)
+            {
+                story.Continue();
+                currentText = "";
+                text.text = "";
+                done = false;
+            }
+        }
     }
 
     void WriteChoices()
