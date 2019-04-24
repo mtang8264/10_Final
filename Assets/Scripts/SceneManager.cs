@@ -21,6 +21,7 @@ public class SceneManager : MonoBehaviour
     public string selectedText;
     public string unselectedText;
     private int choiceSelector;
+    private string startTextCode = "<mspace=0.5em>";
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class SceneManager : MonoBehaviour
         story.Continue();
         timer = timePerCharacter;
         text.text = "";
+        currentText = "";
     }
 
     // Update is called once per frame
@@ -42,14 +44,12 @@ public class SceneManager : MonoBehaviour
         Type();
         ChoiceSelection();
         WriteChoices();
-
         if (Input.GetKeyDown(KeyCode.Return))
             Continue();
     }
 
     void Type()
     {
-        currentText = text.text;
         currentGoal = story.currentText;
 
         if(currentText.Length != currentGoal.Length && !done)
@@ -67,7 +67,7 @@ public class SceneManager : MonoBehaviour
             currentText = currentGoal;
         }
 
-        text.text = currentText;
+        text.text = startTextCode + currentText;
     }
 
     void Continue()
@@ -114,7 +114,7 @@ public class SceneManager : MonoBehaviour
             temp += choiceSelector == i ? selectedText : unselectedText;
             temp += story.currentChoices[i].text + "</color>" + '\n';
         }
-        choices.text = temp;
+        choices.text =  startTextCode + temp;
     }
 
     void ChoiceSelection()
