@@ -18,21 +18,8 @@ MonoBehaviour:
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 2f8e0b288b325435d9dbf22342bf7967, type: 3}
+    inkAsset: {fileID: 102900000, guid: 01aa5bbfb22884a43919467daaab268e, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 056c8ae7f9a9443d6b381310c204262a, type: 3}
+    jsonAsset: {fileID: 4900000, guid: 30c9f43e75be64114ba8bc8c6d9448d5, type: 3}
   pendingCompilationStack: []
-  compilationStack:
-  - state: 1
-    inkFile:
-      compileAutomatically: 0
-      inkAsset: {fileID: 102900000, guid: 2f8e0b288b325435d9dbf22342bf7967, type: 3}
-      jsonAssetPath: {fileID: 0}
-      jsonAsset: {fileID: 4900000, guid: 056c8ae7f9a9443d6b381310c204262a, type: 3}
-    inkAbsoluteFilePath: /Users/mtang8264/Desktop/School/02_Spring2019/Intro to Game
-      Developmennt/10_Final/Assets/Inky_Stuff/Script.ink
-    jsonAbsoluteFilePath: /Users/mtang8264/Desktop/School/02_Spring2019/Intro to Game
-      Developmennt/10_Final/Assets/Inky_Stuff/Script.json
-    output: []
-    errorOutput: []
-    timeTaken: 0
+  compilationStack: []
