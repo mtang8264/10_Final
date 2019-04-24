@@ -102,9 +102,10 @@ public class SceneManager : MonoBehaviour
 
     void WriteChoices()
     {
-        if(story.currentChoices.Count == 0)
+        choices.GetComponent<Animator>().SetBool("On", story.currentChoices.Count > 0 && done);
+
+        if (story.currentChoices.Count == 0)
         {
-            choices.text = "";
             return;
         }
         string temp = "";
