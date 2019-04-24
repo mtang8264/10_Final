@@ -588,7 +588,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: <mspace=0.5em>BLah blahdl bahsldhasldf b hasld
+  m_text: <mspace=0.5em>Nothing.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f981341c6e542248c706779946ae7a, type: 2}
   m_sharedMaterial: {fileID: 6774419908973674087, guid: f4f981341c6e542248c706779946ae7a,
@@ -658,10 +658,10 @@ MonoBehaviour:
   m_margin: {x: 0.37635422, y: 4.5387554, z: 0, w: -2.0306196}
   m_textInfo:
     textComponent: {fileID: 858842834}
-    characterCount: 32
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
