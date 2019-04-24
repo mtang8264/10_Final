@@ -245,13 +245,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Blah
-
-    Blah
-
-    Blah'
+  m_text: "\u2022Blah\n\u2022Blah\n\u2022Blah"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f4f981341c6e542248c706779946ae7a, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 1633306778537979302, guid: f4f981341c6e542248c706779946ae7a,
     type: 2}
   m_fontSharedMaterials: []
@@ -319,14 +315,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: -1.6786461, z: 7.68928, w: 0.9746976}
   m_textInfo:
     textComponent: {fileID: 823981663}
-    characterCount: 14
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
     linkCount: 0
     lineCount: 3
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -447,7 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fonts:
   - {fileID: 11400000, guid: f4f981341c6e542248c706779946ae7a, type: 2}
-  - {fileID: 11400000, guid: 034f250ab992b4a3598ded922a625f01, type: 2}
+  - {fileID: 11400000, guid: fd7e255abd12f4edcbd06bac8a52bfeb, type: 2}
   avgPerFont: 0.7
   variance: 0.05
 --- !u!1 &858842833
@@ -493,7 +489,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: <mspace=0.5em>BLah blahdl bahsldhasldf b hasld
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f4f981341c6e542248c706779946ae7a, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 1633306778537979302, guid: f4f981341c6e542248c706779946ae7a,
     type: 2}
   m_fontSharedMaterials: []
@@ -576,7 +572,7 @@ MonoBehaviour:
   m_renderer: {fileID: 858842837}
   m_subTextObjects:
   - {fileID: 0}
-  - {fileID: 2085042151}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -649,7 +645,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1544804404}
-  - {fileID: 2085042154}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -672,7 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fonts:
   - {fileID: 11400000, guid: f4f981341c6e542248c706779946ae7a, type: 2}
-  - {fileID: 11400000, guid: 034f250ab992b4a3598ded922a625f01, type: 2}
+  - {fileID: 11400000, guid: fd7e255abd12f4edcbd06bac8a52bfeb, type: 2}
   avgPerFont: 0.7
   variance: 0.05
 --- !u!1 &1544804403
@@ -821,104 +816,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2085042150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2085042154}
-  - component: {fileID: 2085042153}
-  - component: {fileID: 2085042152}
-  - component: {fileID: 2085042151}
-  m_Layer: 0
-  m_Name: TMP SubMesh [Myfont0-Regular SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2085042151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085042150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_renderer: {fileID: 2085042153}
-  m_meshFilter: {fileID: 2085042152}
-  m_TextComponent: {fileID: 858842834}
---- !u!33 &2085042152
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085042150}
-  m_Mesh: {fileID: 0}
---- !u!23 &2085042153
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085042150}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
---- !u!4 &2085042154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085042150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 858842838}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

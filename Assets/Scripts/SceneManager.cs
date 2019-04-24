@@ -111,7 +111,7 @@ public class SceneManager : MonoBehaviour
         string temp = "";
         for (int i = 0; i < story.currentChoices.Count; i++)
         {
-            temp += choiceSelector == i ? selectedText : unselectedText;
+            temp += choiceSelector == i ? selectedText + ';' : unselectedText + ':';
             temp += story.currentChoices[i].text + "</color>" + '\n';
         }
         choices.text =  startTextCode + temp;
