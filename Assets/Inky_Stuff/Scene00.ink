@@ -17,4 +17,5 @@ Your manager went home hours ago. Business is never very busy on a Thursday. You
 The walk home is as calm as ever.
 The foot path is cold. You can feel it through your shoes.
 You watch your feet as the lights of oncoming traffic streak in and out of view.
+There is no snow on the ground. It hasn't snowed at all this winter, but it has been uncomfortably cold.
 -> DONE
