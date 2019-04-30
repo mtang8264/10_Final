@@ -10,6 +10,7 @@ public class SceneManager : MonoBehaviour
     public TextMeshPro text;
     public Choice[] choices;
     private Story story;
+    public Story[] scenes;
 
     private string currentGoal;
     private string currentText;
@@ -92,6 +93,17 @@ public class SceneManager : MonoBehaviour
             currentText = "";
             text.text = "";
             done = false;
+        }
+        else
+        {
+            for (int i = 0; i < scenes.Length - 1; i++)
+            {
+                if(scenes[i].Equals(story))
+                {
+                    story = scenes[i + 1];
+                    return;
+                }
+            }
         }
     }
 
