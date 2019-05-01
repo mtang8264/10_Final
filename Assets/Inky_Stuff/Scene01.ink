@@ -34,9 +34,15 @@ On the porch now, you turn the handle of the front door to find it locked.
 ==PISSED_MOM_DOOR==
 Finally, a light turns on in the window upstairs. It's Lori's room.
 You here muffled shouting coming from inside as someone comes down the stairs.
+A few more lights flicker on along the path down the stairs until you here locks slide behind the door.
+"Why the fuck are you waking me up this late?" Lori looks like a mess, but that's normal.
+She's wearing her once white bathrobe, and her hair is tied is horrible knot on her head.
 ->END
 
 ==PISSED_MOM_WINDOW==
 You walk down the stairs and around the side of the house.
 There is a window in the living room that you've made a habit of unlocking.
+You jump up and grab the base of the window. You slide it open and pull yourself through the window.
+You fall in a pile on the floor in a mixture of exhaustion and apathy.
+You were trying not to make too much noise, but it clearly didn't work.
 ->END
