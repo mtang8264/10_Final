@@ -40,6 +40,8 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckForCommands();
+
         Type();
         WriteChoices();
 
@@ -77,6 +79,22 @@ public class SceneManager : MonoBehaviour
         }
 
         text.text = startTextCode + currentText;
+    }
+
+    void CheckForCommands()
+    {
+        if(story.currentText.Substring(0,2) == "?V")
+        {
+            string temp = story.currentText.Substring(2).Trim();
+            for (int i = 0; i < Visuals.visuals.Count; i++)
+            {
+                Debug.Log(temp);
+                Debug.Log(Visuals.visuals[i].name);
+                Debug.Log(temp == Visuals.visuals[i].name);
+                Visuals.visuals[i].visible = Visuals.visuals[i].name == temp;
+            }
+            story.Continue();
+        }
     }
 
     void Continue()

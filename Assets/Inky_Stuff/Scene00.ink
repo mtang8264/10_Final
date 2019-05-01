@@ -1,3 +1,4 @@
+?VBuilding
 The day is almost over. The artificial lights of the store pierce deep into the blue night.
 You stand slumped over the counter flipping through a magazine you pulled off the wall.
 You turn the pages, staring at the colorful images, ignoring the sparse words.
