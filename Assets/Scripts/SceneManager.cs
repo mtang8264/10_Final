@@ -8,8 +8,9 @@ public class SceneManager : MonoBehaviour
 {
     public TextAsset inkFile;
     public TextMeshPro text;
-    public TextMeshPro choices;
+    public Choice[] choices;
     private Story story;
+    public Story[] scenes;
 
     private string currentGoal;
     private string currentText;
@@ -17,10 +18,7 @@ public class SceneManager : MonoBehaviour
     public float timePerCharacter;
     public bool done;
     private float timer;
-
-    public string selectedText;
-    public string unselectedText;
-    private int choiceSelector;
+    
     private string startTextCode = "<mspace=0.5em>";
 
     // Start is called before the first frame update
@@ -42,10 +40,22 @@ public class SceneManager : MonoBehaviour
     void Update()
     {
         Type();
-        ChoiceSelection();
         WriteChoices();
+
+
+        Debug.Log(story.currentChoices.Count);
+        if (story.currentChoices.Count> 0)
+            ChoiceSelection();
+
         if (Input.GetKeyDown(KeyCode.Return))
             Continue();
+    }
+
+    private void OnMouseDown()
+    {
+        if (story.currentChoices.Count < 0)
+            return;
+        Continue();
     }
 
     void Type()
@@ -77,66 +87,53 @@ public class SceneManager : MonoBehaviour
             done = true;
             return;
         }
-        if(story.currentChoices.Count == 0)
+        if(story.canContinue)
         {
-            if(story.canContinue)
-            {
-                story.Continue();
-                currentText = "";
-                text.text = "";
-                done = false;
-            }
+            story.Continue();
+            currentText = "";
+            text.text = "";
+            done = false;
         }
-        else 
+        else
         {
-            story.ChooseChoiceIndex(choiceSelector);
-            if (story.canContinue)
+            for (int i = 0; i < scenes.Length - 1; i++)
             {
-                story.Continue();
-                currentText = "";
-                text.text = "";
-                done = false;
+                if(scenes[i].Equals(story))
+                {
+                    story = scenes[i + 1];
+                    return;
+                }
             }
         }
     }
 
     void WriteChoices()
     {
-        choices.GetComponent<Animator>().SetBool("On", story.currentChoices.Count > 0 && done);
-
-        if (story.currentChoices.Count == 0)
+        for (int i = 0; i < choices.Length; i++)
         {
-            return;
+            if (story.currentChoices.Count - 1 < i)
+            {
+                choices[i].show = false;
+                continue;
+            }
+            choices[i].show = true;
+            choices[i].text = story.currentChoices[i].text;
         }
-        string temp = "";
-        for (int i = 0; i < story.currentChoices.Count; i++)
-        {
-            temp += choiceSelector == i ? selectedText + ';' : unselectedText + ':';
-            temp += story.currentChoices[i].text + "</color>" + '\n';
-        }
-        choices.text =  startTextCode + temp;
     }
 
     void ChoiceSelection()
     {
-        if(story.currentChoices.Count == 0)
-        {
-            choiceSelector = 0;
-            return;
-        }
+        Debug.Log("Checking");
 
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-            choiceSelector++;
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-            choiceSelector--;
+        for (int i = 0; i < choices.Length; i++)
+        {
+            if (choices[i].show == false)
+                continue;
+            if (choices[i].click == false)
+                continue;
 
-        if(choiceSelector < 0)
-        {
-            choiceSelector = story.currentChoices.Count - 1;
-        }
-        if(choiceSelector >= story.currentChoices.Count)
-        {
-            choiceSelector = 0;
+            story.ChooseChoiceIndex(i);
+            Continue();
         }
     }
 }

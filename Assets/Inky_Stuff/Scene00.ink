@@ -17,4 +17,22 @@ Your manager went home hours ago. Business is never very busy on a Thursday. You
 The walk home is as calm as ever.
 The foot path is cold. You can feel it through your shoes.
 You watch your feet as the lights of oncoming traffic streak in and out of view.
+There is no snow on the ground. It hasn't snowed at all this winter, but it has been uncomfortably cold.
+You wonder to yourself, "Why haven't I left this place?"
+*   [Things got complicated...]
+    ->WHAT_WENT_WRONG
+*   [It's not that bad...]
+    ->WHAT_WENT_WRONG
+*   [...]
+    ->WHAT_WENT_WRONG
+
+==WHAT_WENT_WRONG==
+You always said that you'd leave after high school and never come back.
+And yet... here you are.
+Drudging through the snow.
+You can still leave if you want to.
+You know you can.
+Nothings keeping you here but you.
+Nothing.
+Nothing...
 -> DONE
