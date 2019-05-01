@@ -86,12 +86,12 @@ public class SceneManager : MonoBehaviour
         if(story.currentText.Substring(0,2) == "?V")
         {
             string temp = story.currentText.Substring(2).Trim();
+            List<string> t = new List<string>(temp.Split('+'));
+            Debug.Log("Attempting to show Visual called " + temp);
             for (int i = 0; i < Visuals.visuals.Count; i++)
             {
-                Debug.Log(temp);
-                Debug.Log(Visuals.visuals[i].name);
-                Debug.Log(temp == Visuals.visuals[i].name);
-                Visuals.visuals[i].visible = Visuals.visuals[i].name == temp;
+                Visuals.visuals[i].visible = t.Contains(Visuals.visuals[i].name);
+                Debug.Log(t.Contains(Visuals.visuals[i].name) ? "Showed Visual " + Visuals.visuals[i].name : "Hid Visual " + Visuals.visuals[i].name);
             }
             story.Continue();
         }
