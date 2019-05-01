@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 1455198346}
   - component: {fileID: 1455198345}
   - component: {fileID: 1455198352}
+  - component: {fileID: 1455198353}
   m_Layer: 0
   m_Name: Choice1
   m_TagString: Untagged
@@ -714,6 +715,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1455198353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455198343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.5
 --- !u!1 &1458041607
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +956,7 @@ GameObject:
   - component: {fileID: 1729078762}
   - component: {fileID: 1729078761}
   - component: {fileID: 1729078768}
+  - component: {fileID: 1729078769}
   m_Layer: 0
   m_Name: Choice2
   m_TagString: Untagged
@@ -1210,6 +1227,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1729078769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729078759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.5
 --- !u!1 &1981434749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1259,7 @@ GameObject:
   - component: {fileID: 1981434752}
   - component: {fileID: 1981434751}
   - component: {fileID: 1981434758}
+  - component: {fileID: 1981434759}
   m_Layer: 0
   m_Name: Choice0
   m_TagString: Untagged
@@ -1497,3 +1530,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1981434759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981434749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.5
