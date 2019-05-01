@@ -10,8 +10,9 @@ public class SceneManager : MonoBehaviour
     public TextMeshPro text;
     public Choice[] choices;
     private Story story;
-    public Story[] scenes;
+    public TextAsset[] scenes;
 
+    private int storyIdx = 0;
     private string currentGoal;
     private string currentText;
 
@@ -39,11 +40,11 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckForCommands();
+
         Type();
         WriteChoices();
 
-
-        Debug.Log(story.currentChoices.Count);
         if (story.currentChoices.Count> 0)
             ChoiceSelection();
 
@@ -53,7 +54,7 @@ public class SceneManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (story.currentChoices.Count < 0)
+        if (story.currentChoices.Count > 0)
             return;
         Continue();
     }
@@ -80,6 +81,22 @@ public class SceneManager : MonoBehaviour
         text.text = startTextCode + currentText;
     }
 
+    void CheckForCommands()
+    {
+        if(story.currentText.Substring(0,2) == "?V")
+        {
+            string temp = story.currentText.Substring(2).Trim();
+            List<string> t = new List<string>(temp.Split('+'));
+            Debug.Log("Attempting to show Visual called " + temp);
+            for (int i = 0; i < Visuals.visuals.Count; i++)
+            {
+                Visuals.visuals[i].visible = t.Contains(Visuals.visuals[i].name);
+                Debug.Log(t.Contains(Visuals.visuals[i].name) ? "Showed Visual " + Visuals.visuals[i].name : "Hid Visual " + Visuals.visuals[i].name);
+            }
+            story.Continue();
+        }
+    }
+
     void Continue()
     {
         if(done == false)
@@ -96,13 +113,15 @@ public class SceneManager : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < scenes.Length - 1; i++)
+            storyIdx++;
+            if(storyIdx < scenes.Length)
             {
-                if(scenes[i].Equals(story))
-                {
-                    story = scenes[i + 1];
-                    return;
-                }
+                inkFile = scenes[storyIdx];
+                story = new Story(inkFile.text);
+                story.Continue();
+                currentText = "";
+                text.text = "";
+                done = false;
             }
         }
     }
@@ -123,8 +142,6 @@ public class SceneManager : MonoBehaviour
 
     void ChoiceSelection()
     {
-        Debug.Log("Checking");
-
         for (int i = 0; i < choices.Length; i++)
         {
             if (choices[i].show == false)
