@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 1455198346}
   - component: {fileID: 1455198345}
   - component: {fileID: 1455198352}
+  - component: {fileID: 1455198353}
   m_Layer: 0
   m_Name: Choice1
   m_TagString: Untagged
@@ -467,9 +468,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.83, y: 2}
+  m_AnchoredPosition: {x: -7.33, y: 2}
   m_SizeDelta: {x: 7, y: 2}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1455198345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +702,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 3.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -714,6 +715,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1455198353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455198343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.75
 --- !u!1 &1458041607
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +897,9 @@ MonoBehaviour:
   - {fileID: 1981434751}
   - {fileID: 1455198345}
   - {fileID: 1729078761}
+  scenes:
+  - {fileID: 4900000, guid: 30c9f43e75be64114ba8bc8c6d9448d5, type: 3}
+  - {fileID: 4900000, guid: f19708761008d40fab3d0264c7f478b9, type: 3}
   timePerCharacter: 0.01
   done: 0
 --- !u!4 &1662011314
@@ -940,6 +959,7 @@ GameObject:
   - component: {fileID: 1729078762}
   - component: {fileID: 1729078761}
   - component: {fileID: 1729078768}
+  - component: {fileID: 1729078769}
   m_Layer: 0
   m_Name: Choice2
   m_TagString: Untagged
@@ -963,9 +983,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.83, y: 0}
+  m_AnchoredPosition: {x: -7.33, y: 0}
   m_SizeDelta: {x: 7, y: 2}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1729078761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,7 +1217,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 3.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1210,6 +1230,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1729078769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729078759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.75
 --- !u!1 &1981434749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1262,7 @@ GameObject:
   - component: {fileID: 1981434752}
   - component: {fileID: 1981434751}
   - component: {fileID: 1981434758}
+  - component: {fileID: 1981434759}
   m_Layer: 0
   m_Name: Choice0
   m_TagString: Untagged
@@ -1250,9 +1286,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.83, y: 4}
+  m_AnchoredPosition: {x: -7.33, y: 4}
   m_SizeDelta: {x: 7, y: 2}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1981434751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,7 +1520,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 3.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1497,3 +1533,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1981434759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981434749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff86545f53449404d8ee98713d37634c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0.975
+  max: 1.025
+  phase: 0.75
