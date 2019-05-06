@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +12,10 @@ public class ContentFilter : MonoBehaviour
         new Filter("FuCk", "FrIcK"),
         new Filter("shit", "shoot"),
         new Filter("SHIT", "SHOOT"),
-        new Filter("Shit", "Shoot")
+        new Filter("Shit", "Shoot"),
+        new Filter("crap", "crud"),
+        new Filter("CRAP", "CRUD"),
+        new Filter("Crap", "Crud")
     };
 }
 
