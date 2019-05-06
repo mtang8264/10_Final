@@ -22,6 +22,8 @@ public class SceneManager : MonoBehaviour
     
     private string startTextCode = "<mspace=0.5em>";
 
+    public bool contentFilter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,9 @@ public class SceneManager : MonoBehaviour
     {
         currentGoal = story.currentText;
 
+        if(contentFilter)
+            currentGoal = Filter(currentGoal);
+
         if(currentText.Length != currentGoal.Length && !done)
         {
             timer -= timePerCharacter;
@@ -79,6 +84,22 @@ public class SceneManager : MonoBehaviour
         }
 
         text.text = startTextCode + currentText;
+    }
+
+    string Filter(string t)
+    {
+        string curr = t;
+        for (int i = 0; i < ContentFilter.filters.Length; i++)
+        {
+            if (curr.Contains(ContentFilter.filters[i].target) == false)
+                continue;
+            while(curr.Contains(ContentFilter.filters[i].target))
+            {
+                curr = curr.Replace(ContentFilter.filters[i].target, ContentFilter.filters[i].goal);
+            }
+        }
+        Debug.Log(curr);
+        return curr;
     }
 
     void CheckForCommands()
