@@ -46,9 +46,14 @@ You know she knows that you work late. You usually end up paying rent.
 *   ["You know where I've been"]
     "Oh give it a break, Lori. You know where I've been."
     You see a kind of rage behind Lori's eyes.
+    You aren't afraid. She gets like this all the time. She never does anything about it.
+    "You do not, do NOT, talk to your mother that way. To think this is how you treat me."
+    "I raised you! Your fucking father wanted to leave you in a box, on the road!"
+    After  this, you stop listening. You walk past her, up the stairs, and in to your room.
+    You hear her say something about leaving, but pay it no mind. Nothing ever changes.
     ->END
 *   [...]
-->END
+    ->END
 
 ==PISSED_MOM_WINDOW==
 You walk down the stairs and around the side of the house.
