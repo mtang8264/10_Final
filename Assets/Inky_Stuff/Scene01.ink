@@ -37,6 +37,17 @@ You here muffled shouting coming from inside as someone comes down the stairs.
 A few more lights flicker on along the path down the stairs until you here locks slide behind the door.
 "Why the fuck are you waking me up this late?" Lori looks like a mess, but that's normal.
 She's wearing her once white bathrobe, and her hair is tied is horrible knot on her head.
+"Where have you been?"
+You know she knows that you work late. You usually end up paying rent.
+*   ["I was at work"]
+    "I was at work... like every night."
+    Lori looks back at you with seemingly nothing behind her eyes.
+    ->END
+*   ["You know where I've been"]
+    "Oh give it a break, Lori. You know where I've been."
+    You see a kind of rage behind Lori's eyes.
+    ->END
+*   [...]
 ->END
 
 ==PISSED_MOM_WINDOW==
