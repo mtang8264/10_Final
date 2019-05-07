@@ -1,0 +1,28 @@
+Scene00
+	Building - Done
+	Code - Done
+	Code - Done
+	Path - Done
+	Person+Scribble - Done
+	None - Done
+Scene01
+	Stairs
+	Door
+	NoKey
+	Lori
+	Window
+Scene02
+	Bedroom
+	None - Done
+	Envelope
+	None - Done
+	Letter
+	Tear
+Scene03_0
+	Bed
+	None - Done
+	Table
+	Void
+	None - Done
+	None - Done
+	Mess
