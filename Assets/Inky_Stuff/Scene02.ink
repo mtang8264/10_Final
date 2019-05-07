@@ -1,3 +1,4 @@
+?VBedroom
 It's almost as cold in your room as it is outside.
 Heating is expensive this time of year, and Lori isn't exactly helping pay the bills anymore.
 You don't remember when she was fired, but you do remember that she never found another job.
@@ -18,6 +19,7 @@ You take off your jacket and kick off your shoes.
     Peering out of the shoebox.
     ->A_LETTER
 *   [Drop your jacket on the floor]
+    ?VNone
     You drop your jacket in front of you on the floor.
     You'll probably just wake up again tomorrow and put it back on so what's the point.
     You can still hear cars going by outside.
@@ -25,12 +27,14 @@ You take off your jacket and kick off your shoes.
     ->APATHY
 
 ==A_LETTER==
+?VEnvelope
 There, on the ground, is lying a small off white envelope.
 You can see that it was seeled with a heart shaped sticker.
 The sticker is torn down the middle, probably to open the envelope.
 You don't remember where it came from. 
 You don't.
 *   [Leave it there]
+    ?VNone
     There's a mess on the floor but don't feel like cleaning it up.
     You're tired. Besides, the whole house is a mess all the time, so what difference does it make.
     You can still hear cars going by outside.
@@ -47,6 +51,7 @@ You don't.
         You recognize it, but you can't quite tell from where.
         ->CHECK_THE_LETTER
     **  [Leave it alone]
+        ?VNone
         It can't be that interesting if you left it in the closet for so long.
         You put the box back in the closet and drudge off to your bed.
         You can still hear cars going by outside.
@@ -59,6 +64,7 @@ You don't.
     ->CHECK_THE_LETTER
 
 ==CHECK_THE_LETTER==
+?VLetter
 The envelope is a pale tan hue.
 Around the edges there's some light embossing. A floural pattern.
 It's old. The corners are bent and crushed.
@@ -73,6 +79,7 @@ It's from a long time ago.
 A time that ended.
 *   [Tear it up]
     Its over now. It doesn't matter what's inside.
+    ?VTear
     You tear the envelope and its contents straight down the middle.
     And again.
     And again.
