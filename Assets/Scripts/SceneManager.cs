@@ -33,6 +33,15 @@ public class SceneManager : MonoBehaviour
     void InitStory()
     {
         story = new Story(inkFile.text);
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            if(inkFile.text == scenes[i].text)
+            {
+                storyIdx = i;
+                break;
+            }
+        }
+        Debug.Log(storyIdx);
         story.Continue();
         timer = timePerCharacter;
         text.text = "";
