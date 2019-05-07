@@ -38,7 +38,7 @@ On the porch now, you turn the handle of the front door to find it locked.
 Finally, a light turns on in the window upstairs. It's Lori's room.
 You here muffled shouting coming from inside as someone comes down the stairs.
 A few more lights flicker on along the path down the stairs until you hear locks slide behind the door.
-    ?VLori
+    ?VPerson
 "Why the fuck are you waking me up this late?" Lori looks like a mess, but that's normal.
 She's wearing her once white bathrobe, and her hair is tied is horrible knot on her head.
 "Where have you been?"
