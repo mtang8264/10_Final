@@ -26,3 +26,22 @@ Scene03_0
 	None - Done
 	None - Done
 	Mess
+Scene03_1
+	Paper
+	OpenPaper
+	Bed
+	None - Done
+	Trio
+	Person+Scribble - Done
+	Person - Done
+	None - Done
+Scene03_2
+	Trash
+	Bed
+	None - Done
+	TheThree
+	Fish
+	Blade
+	Person+Scribble - Done
+	Trio
+	None - Done
