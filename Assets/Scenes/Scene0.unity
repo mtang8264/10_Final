@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 792adcc17075447d89c16de2b57b3a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: 30c9f43e75be64114ba8bc8c6d9448d5, type: 3}
+  inkFile: {fileID: 4900000, guid: 2732d5b7749ae2f4293223056a6d3d8f, type: 3}
   text: {fileID: 858842834}
   choices:
   - {fileID: 1981434751}
@@ -1345,6 +1345,9 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 30c9f43e75be64114ba8bc8c6d9448d5, type: 3}
   - {fileID: 4900000, guid: f19708761008d40fab3d0264c7f478b9, type: 3}
   - {fileID: 4900000, guid: 2732d5b7749ae2f4293223056a6d3d8f, type: 3}
+  - {fileID: 4900000, guid: 08355805ff96b984890f5f998e71d5e4, type: 3}
+  - {fileID: 4900000, guid: 9f24282aef6b5a440bbfa562f7d88a9c, type: 3}
+  - {fileID: 4900000, guid: 9731cba7264ea6f4696976b35160af3b, type: 3}
   timePerCharacter: 0.01
   done: 0
   contentFilter: 0

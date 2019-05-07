@@ -125,6 +125,55 @@ public class SceneManager : MonoBehaviour
             }
             story.Continue();
         }
+
+        if(story.currentText.Trim() == "?30")
+        {
+            for (int i = 0; i < scenes.Length; i++)
+            {
+                if(scenes[i].name == "Scene03_0")
+                {
+                    inkFile = scenes[i];
+                }
+            }
+            storyIdx = 5;
+            story = new Story(inkFile.text);
+            story.Continue();
+            currentText = "";
+            text.text = "";
+            done = false;
+        }
+        if (story.currentText.Trim() == "?31")
+        {
+            for (int i = 0; i < scenes.Length; i++)
+            {
+                if (scenes[i].name == "Scene03_1")
+                {
+                    inkFile = scenes[i];
+                }
+            }
+            storyIdx = 5;
+            story = new Story(inkFile.text);
+            story.Continue();
+            currentText = "";
+            text.text = "";
+            done = false;
+        }
+        if (story.currentText.Trim() == "?32")
+        {
+            for (int i = 0; i < scenes.Length; i++)
+            {
+                if (scenes[i].name == "Scene03_2")
+                {
+                    inkFile = scenes[i];
+                }
+            }
+            storyIdx = 5;
+            story = new Story(inkFile.text);
+            story.Continue();
+            currentText = "";
+            text.text = "";
+            done = false;
+        }
     }
 
     void Continue()
