@@ -6,11 +6,11 @@ Scene00
 	Person+Scribble - Done
 	None - Done
 Scene01
-	Stairs
-	Door
-	NoKey
-	Lori
-	Window
+	Stairs - Done
+	Door - Done
+	NoKey - Done
+	Person - Done
+	Window - Drawn
 Scene02
 	Bedroom
 	None - Done
