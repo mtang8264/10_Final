@@ -4,10 +4,13 @@ You don't want to open it.
 It doesn't really matter which.
 The end is the same.
 You walk to the hall and throw the letter in the small can sitting there.
+?VTrash
 It falls slowly, but it falls.
 You can't stand being awake any longer so you climb in bed.
+?VBed
 Maybe you'll finally be able to rest.
 Maybe.
+?VNone
 ...........
 ...............
 ...................
@@ -19,60 +22,77 @@ You can't see anyone, but only because there's noone to see.
 You see them.
 Both of them.
 Two halves of one broken heart.
+?VTheThree
 Broken for different reasons.
 *   [The fish]
+    ?VFish
     The fish is unaware. Blind to the world outside the pond.
     Forced to trust in the hand which flay it.
     **  [The blade]
+    ?VBlade
         The blade is cruel, but only because of the hand that weilds it.
         It slices as though nothing has happened.
         *** [The butcher]
+            ?VPerson+Scribble
             The butcher is apathy incarnate. He swings his knife with abandon.
             He cares for his meat, but it feels his wrath.
             ->TRIO
     **  [The butcher]
+        ?VPerson+Scribble
         The butcher is apathy incarnate. He swings his knife with abandon.
         He cares for his meat, but it feels his wrath.
         *** [The blade]
+            ?VBlade
             The blade is cruel, but only because of the hand that weilds it.
             It slices as though nothing has happened.
             ->TRIO
 *   [The blade]
+    ?VBlade
     The blade is cruel, but only because of the hand that weilds it.
     It slices as though nothing has happened.
     **  [The fish]
+        ?VFish
         The fish is unaware. Blind to the world outside the pond.
         Forced to trust in the hand which flay it.
         *** [The butcher]
+            ?VPerson+Scribble
             The butcher is apathy incarnate. He swings his knife with abandon.
             He cares for his meat, but it feels his wrath.
             ->TRIO
     **  [The butcher]
+        ?VPerson+Scribble
         The butcher is apathy incarnate. He swings his knife with abandon.
         He cares for his meat, but it feels his wrath.
         *** [The fish]
+            ?VFish
             The fish is unaware. Blind to the world outside the pond.
             Forced to trust in the hand which flay it.
             ->TRIO
 *   [The butcher]
+    ?VPerson+Scribble
     The butcher is apathy incarnate. He swings his knife with abandon.
     He cares for his meat, but it feels his wrath.
     **  [The fish]
+        ?VFish
         The fish is unaware. Blind to the world outside the pond.
         Forced to trust in the hand which flay it.
         *** [The blade]
+        ?VBlade
             The blade is cruel, but only because of the hand that weilds it.
             It slices as though nothing has happened.
             ->TRIO
     **  [The blade]
+        ?VBlade
         The blade is cruel, but only because of the hand that weilds it.
         It slices as though nothing has happened.
         *** [The fish]
+            ?VFish
             The fish is unaware. Blind to the world outside the pond.
             Forced to trust in the hand which flay it.
             ->TRIO
 
 ==TRIO==
+?VTrio
 A terrible trio.
 Luckily, now, it never was.
 Right?
@@ -90,6 +110,7 @@ A tearing at your nonexistant legs.
 A sinking in a stomach you don't have.
 A feeling of dying in a mind you lost.
 *   [Let go]
+    ?VNone
     You were its creator, but now it is too strong.
     That's what you tell yourself at least.
     It is only a child, but you allow it to bring you crashing down to the bottom of the abyss.
