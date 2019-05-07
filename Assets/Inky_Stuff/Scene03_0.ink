@@ -5,11 +5,14 @@ You could have just thrown it out, but you did something, anything.
 You hold in your hand the remnants of what used to be.
 The last fragments of a past that should never have been.
 You toss the unreadable scraps in the shoebox you found the envelope in and head to bed.
+?VBed
 Maybe, for once, you'll get a good nights sleep.
 Maybe.
+?VNone
 ...........
 ...............
 ...................
+?VTable
 You are sitting in a chair, but you can not move.
 It's like your arms made of lead.
 You struggle for a moment but then you look in front of you.
@@ -32,6 +35,7 @@ You can't tell how you know this, but there isn't a doubt in your mind.
     You have to run full speed not to move, but you'll still be here if you stop.
     ->FIGHT
 *   [Stare]
+    ?VVoid
     It's clear what isn't happening here.
     You know exactly where you aren't and exactly who isn't across from you.
     The void stares back into the void staring back into the void.
@@ -40,6 +44,7 @@ You can't tell how you know this, but there isn't a doubt in your mind.
     That doesn't make it any easier.
     That doesn't mean you like what's going on.
     **  [Say hello]
+        ?VNone
         You say nothing as you say hello.
         All around you, a throbbing, pounding, shoving pressure builds.
         It will crush you before it loves you.
@@ -52,6 +57,7 @@ You can't tell how you know this, but there isn't a doubt in your mind.
         ?hell
         ->END
     **  [Say goodbye]
+        ?VNone
         You say nothing as you say goodbye.
         There's no way to fix what you broke.
         It's impossible to unsalt this ground.
@@ -65,6 +71,7 @@ You can't tell how you know this, but there isn't a doubt in your mind.
         ->END
     
 ==FIGHT==
+?VMEss
 You fall to the ground exhausted in your chair.
 It's all you could ever do.
 Fight and struggle even though nothing happens.
