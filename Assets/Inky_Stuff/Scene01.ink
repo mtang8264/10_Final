@@ -1,9 +1,11 @@
+?VStairs
 When you arrive home, all the lights except the porch are off.
 Lori is probably upstairs in bed already, fast asleep.
 With you coming home so late from work, you two rarely share any time together.
 You walk up the frozen stairs, being careful not to lose your balance.
 You've made it a habit of being extra safe on the stairs after Don, Lori's boyfriend, had his accident.
 It was scary shit.
+?VDoor
 On the porch now, you turn the handle of the front door to find it locked.
 ->LOCKED_OUT
 
@@ -21,6 +23,7 @@ On the porch now, you turn the handle of the front door to find it locked.
     **  [Try something else]
         ->LOCKED_OUT
 *   [Check if you have a key]
+    ?NoKey
     You search your pockets.
     Front right and left.
     Back right and left.
@@ -34,7 +37,8 @@ On the porch now, you turn the handle of the front door to find it locked.
 ==PISSED_MOM_DOOR==
 Finally, a light turns on in the window upstairs. It's Lori's room.
 You here muffled shouting coming from inside as someone comes down the stairs.
-A few more lights flicker on along the path down the stairs until you here locks slide behind the door.
+A few more lights flicker on along the path down the stairs until you hear locks slide behind the door.
+    ?VLori
 "Why the fuck are you waking me up this late?" Lori looks like a mess, but that's normal.
 She's wearing her once white bathrobe, and her hair is tied is horrible knot on her head.
 "Where have you been?"
@@ -45,7 +49,7 @@ You know she knows that you work late. You usually end up paying rent.
     "Well don't fucking wake me up again," she says, turning to retunr upstairs.
     It's like this every night, and you've gotten used to it.
     You don't want to walk upstairs yet, not until she's back in her room.
-    The less you have to interacti with Lori the better.
+    The less you have to interact with Lori the better.
     ->END
 *   ["You know where I've been"]
     "Oh give it a break, Lori. You know where I've been."
@@ -64,6 +68,7 @@ You know she knows that you work late. You usually end up paying rent.
 
 ==PISSED_MOM_WINDOW==
 You walk down the stairs and around the side of the house.
+?VWindow
 There is a window in the living room that you've made a habit of unlocking.
 You jump up and grab the base of the window. You slide it open and pull yourself through the window.
 You fall in a pile on the floor in a mixture of exhaustion and apathy.
