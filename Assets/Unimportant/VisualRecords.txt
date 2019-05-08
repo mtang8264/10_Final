@@ -12,12 +12,12 @@ Scene01
 	Person - Done
 	Window - Drawn
 Scene02
-	Bedroom - Drawn
+	Bedroom - Done
 	None - Done
-	Envelope - Drawn
+	Envelope - Done
 	None - Done
-	Letter - Drawn
-	Tear - Drawn
+	Letter - Done
+	Tear - Done
 Scene03_0
 	Bed
 	None - Done
