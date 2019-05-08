@@ -10,7 +10,7 @@ Scene01
 	Door - Done
 	NoKey - Done
 	Person - Done
-	Window - Drawn
+	Window - Done
 Scene02
 	Bedroom - Done
 	None - Done
@@ -19,10 +19,10 @@ Scene02
 	Letter - Done
 	Tear - Done
 Scene03_0
-	Bed
+	Bed - Drawn
 	None - Done
-	Table
-	Void
+	Table - Drawn
+	Void - Drawn
 	None - Done
 	None - Done
 	Mess
