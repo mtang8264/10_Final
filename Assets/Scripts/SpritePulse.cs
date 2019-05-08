@@ -13,7 +13,8 @@ public class SpritePulse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        t = GetComponent<Transform>();
+        min = transform.localScale.x - 0.01f;
+        max = transform.localScale.x + 0.01f;
     }
 
     // Update is called once per frame
@@ -23,6 +24,6 @@ public class SpritePulse : MonoBehaviour
         scale += 1;
         scale /= 2;
         scale = Mathf.Lerp(min, max, scale);
-        t.localScale = new Vector3(scale, scale, 1);
+        transform.localScale = new Vector3(scale, scale, 1);
     }
 }

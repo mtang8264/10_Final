@@ -1,0 +1,47 @@
+Scene00
+	Building - Done
+	Code - Done
+	Code - Done
+	Path - Done
+	Person+Scribble - Done
+	None - Done
+Scene01
+	Stairs - Done
+	Door - Done
+	NoKey - Done
+	Person - Done
+	Window - Drawn
+Scene02
+	Bedroom - Done
+	None - Done
+	Envelope - Done
+	None - Done
+	Letter - Done
+	Tear - Done
+Scene03_0
+	Bed
+	None - Done
+	Table
+	Void
+	None - Done
+	None - Done
+	Mess
+Scene03_1
+	Paper
+	OpenPaper
+	Bed
+	None - Done
+	Trio
+	Person+Scribble - Done
+	Person - Done
+	None - Done
+Scene03_2
+	Trash
+	Bed
+	None - Done
+	TheThree
+	Fish
+	Blade
+	Person+Scribble - Done
+	Trio
+	None - Done
