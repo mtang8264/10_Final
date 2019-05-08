@@ -1,4 +1,3 @@
-?VPaper
 Inside the envelope you find a folded paper.
 It's not particularly nice paper, just something stolen from a printer.
 You're afraid to unfold it.
@@ -17,7 +16,7 @@ Read it.
 You have to.
 You want to.
 You know you do.
-?VOpenPaper
+?VLetter
 You unfold the paper and in the same hand writing is a note.
 You read it to yourself.
 No.

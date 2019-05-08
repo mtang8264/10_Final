@@ -16,7 +16,6 @@ Scene02
 	None - Done
 	Envelope - Done
 	None - Done
-	Letter - Done
 	Tear - Done
 Scene03_0
 	Bed - Drawn
@@ -27,8 +26,7 @@ Scene03_0
 	None - Done
 	Mess
 Scene03_1
-	Paper
-	OpenPaper
+	Letter - Drawn
 	Bed
 	None - Done
 	Trio
