@@ -10,38 +10,36 @@ Scene01
 	Door - Done
 	NoKey - Done
 	Person - Done
-	Window - Drawn
+	Window - Done
 Scene02
 	Bedroom - Done
 	None - Done
 	Envelope - Done
 	None - Done
-	Letter - Done
 	Tear - Done
 Scene03_0
-	Bed
+	Bed - Done
 	None - Done
-	Table
-	Void
+	Table - Done
+	Void - Done
 	None - Done
 	None - Done
-	Mess
+	None - Done
 Scene03_1
-	Paper
-	OpenPaper
-	Bed
+	Letter - Done
+	Bed - Done
 	None - Done
-	Trio
+	Trio - Done
 	Person+Scribble - Done
 	Person - Done
 	None - Done
 Scene03_2
-	Trash
-	Bed
+	Trash - Done
+	Bed - Done
 	None - Done
-	TheThree
-	Fish
-	Blade
+	Trio - Done
+	Fish - Done
+	Blade - Done
 	Person+Scribble - Done
-	Trio
+	Trio - Done
 	None - Done

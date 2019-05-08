@@ -64,7 +64,6 @@ You don't.
     ->CHECK_THE_LETTER
 
 ==CHECK_THE_LETTER==
-?VLetter
 The envelope is a pale tan hue.
 Around the edges there's some light embossing. A floural pattern.
 It's old. The corners are bent and crushed.

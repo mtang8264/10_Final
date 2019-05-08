@@ -71,7 +71,7 @@ You can't tell how you know this, but there isn't a doubt in your mind.
         ->END
     
 ==FIGHT==
-?VMEss
+?VNone
 You fall to the ground exhausted in your chair.
 It's all you could ever do.
 Fight and struggle even though nothing happens.
