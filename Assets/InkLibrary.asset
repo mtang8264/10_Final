@@ -28,15 +28,15 @@ MonoBehaviour:
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 6ab5dbb3439614a61ab5d2af9c8c2ca5, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 08355805ff96b984890f5f998e71d5e4, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: b40a01e59fbe342cc81bb91f1cc2c302, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 9f24282aef6b5a440bbfa562f7d88a9c, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 8b81dff832fd44a39975e0269edcc814, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 9731cba7264ea6f4696976b35160af3b, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 1460e815e969b43b8a83a7caa8b48c27, type: 3}
     jsonAssetPath: {fileID: 0}
