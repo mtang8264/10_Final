@@ -18,16 +18,16 @@ Scene02
 	None - Done
 	Tear - Done
 Scene03_0
-	Bed - Drawn
+	Bed - Done
 	None - Done
-	Table - Drawn
-	Void - Drawn
+	Table - Done
+	Void - Done
 	None - Done
 	None - Done
 	None - Done
 Scene03_1
-	Letter - Drawn
-	Bed
+	Letter - Done
+	Bed - Done
 	None - Done
 	Trio
 	Person+Scribble - Done
