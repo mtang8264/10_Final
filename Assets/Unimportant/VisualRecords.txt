@@ -24,7 +24,7 @@ Scene03_0
 	Void - Drawn
 	None - Done
 	None - Done
-	Mess
+	None - Done
 Scene03_1
 	Letter - Drawn
 	Bed
