@@ -29,7 +29,7 @@ Scene03_1
 	Letter - Done
 	Bed - Done
 	None - Done
-	Trio - Drawn
+	Trio - Done
 	Person+Scribble - Done
 	Person - Done
 	None - Done
