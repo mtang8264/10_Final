@@ -113,6 +113,7 @@ public class SceneManager : MonoBehaviour
     {
         if(story.currentText.Substring(0,2) == "?V")
         {
+            Debug.Log("Command to show Visual \"" + story.currentText.Substring(2).Trim() + "\".");
             string temp = story.currentText.Substring(2).Trim();
             List<string> t = new List<string>(temp.Split('+'));
             for (int i = 0; i < Visuals.visuals.Count; i++)
@@ -124,6 +125,7 @@ public class SceneManager : MonoBehaviour
 
         if(story.currentText.Trim() == "?30")
         {
+            Debug.Log("Command to load Scene 3_0.");
             for (int i = 0; i < scenes.Length; i++)
             {
                 if(scenes[i].name == "Scene03_0")
@@ -140,6 +142,7 @@ public class SceneManager : MonoBehaviour
         }
         if (story.currentText.Trim() == "?31")
         {
+            Debug.Log("Command to load Scene 3_1.");
             for (int i = 0; i < scenes.Length; i++)
             {
                 if (scenes[i].name == "Scene03_1")
@@ -156,6 +159,7 @@ public class SceneManager : MonoBehaviour
         }
         if (story.currentText.Trim() == "?32")
         {
+            Debug.Log("Command to load Scene 3_2.");
             for (int i = 0; i < scenes.Length; i++)
             {
                 if (scenes[i].name == "Scene03_2")
