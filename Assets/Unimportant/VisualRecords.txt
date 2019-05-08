@@ -34,12 +34,12 @@ Scene03_1
 	Person - Done
 	None - Done
 Scene03_2
-	Trash
-	Bed
+	Trash - Drawn
+	Bed - Done
 	None - Done
-	TheThree
-	Fish
-	Blade
+	Trio - Done
+	Fish - Drawn
+	Blade - Drawn
 	Person+Scribble - Done
-	Trio
+	Trio - Done
 	None - Done

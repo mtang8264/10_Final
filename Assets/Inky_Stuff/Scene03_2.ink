@@ -22,7 +22,7 @@ You can't see anyone, but only because there's noone to see.
 You see them.
 Both of them.
 Two halves of one broken heart.
-?VTheThree
+?VTrio
 Broken for different reasons.
 *   [The fish]
     ?VFish
